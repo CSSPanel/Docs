@@ -55,7 +55,8 @@ const Navbar = () => {
 				<NavbarItem>
 					<Link
 						color='foreground'
-						href='/discord'
+						href='https://discord.gg/eAZU3guKWU'
+						target='_blank'
 					>
 						Discord
 					</Link>
@@ -96,7 +97,8 @@ const Navbar = () => {
 				<NavbarMenuItem>
 					<Link
 						className='w-full'
-						href='/discord'
+						href='https://discord.gg/eAZU3guKWU'
+						target='_blank'
 						size='lg'
 					>
 						Discord
