@@ -17,8 +17,9 @@ const Buttons = () => {
 			custom={2}
 		>
 			<Link
-				href='https://github.com/ShiNxz/CSS-Panel'
-				className='w-full sm:w-fit text-center items-center'
+				href='https://github.com/ShiNxz/CSS-Panel/releases'
+				target='_blank'
+				className='w-full sm:w-fit text-center items-center no-underline'
 			>
 				<Button
 					variant='bordered'
@@ -30,13 +31,18 @@ const Buttons = () => {
 				</Button>
 			</Link>
 
-			<Button
-				variant='bordered'
-				className='!font-normal w-full sm:w-fit justify-center'
-				gradientClassName='w-full sm:w-fit justify-center'
+			<Link
+				href='/docs'
+				className='w-full sm:w-fit text-center items-center no-underline'
 			>
-				Docs <IconArrowRight className='ml-6' />
-			</Button>
+				<Button
+					variant='bordered'
+					className='!font-normal justify-center'
+					gradientClassName='w-full sm:w-fit justify-center'
+				>
+					Docs <IconArrowRight className='ml-6' />
+				</Button>
+			</Link>
 		</motion.div>
 	)
 }

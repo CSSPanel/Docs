@@ -15,7 +15,6 @@ import {
 
 const Navbar = () => {
 	const [isMenuOpen, setIsMenuOpen] = useState(false)
-	const menuItems = ['Dashboard']
 
 	return (
 		<NextUINavbar
@@ -23,7 +22,7 @@ const Navbar = () => {
 			classNames={{
 				wrapper: 'max-w-[100%]',
 			}}
-			className='border-b border-[#eaeaea]'
+			className='border-b border-slate-500/10'
 		>
 			<NavbarContent>
 				<NavbarMenuToggle
@@ -40,9 +39,33 @@ const Navbar = () => {
 				<NavbarItem>
 					<Link
 						color='foreground'
-						href='#'
+						href='/'
 					>
-						Dashboard
+						Home
+					</Link>
+				</NavbarItem>
+				<NavbarItem>
+					<Link
+						color='foreground'
+						href='/docs'
+					>
+						Docs
+					</Link>
+				</NavbarItem>
+				<NavbarItem>
+					<Link
+						color='foreground'
+						href='/discord'
+					>
+						Discord
+					</Link>
+				</NavbarItem>
+				<NavbarItem>
+					<Link
+						color='foreground'
+						href='/modules'
+					>
+						Modules
 					</Link>
 				</NavbarItem>
 			</NavbarContent>
@@ -52,18 +75,42 @@ const Navbar = () => {
 				</NavbarItem>
 			</NavbarContent>
 			<NavbarMenu>
-				{menuItems.map((item, index) => (
-					<NavbarMenuItem key={`${item}-${index}`}>
-						<Link
-							color={index === 2 ? 'primary' : index === menuItems.length - 1 ? 'danger' : 'foreground'}
-							className='w-full'
-							href='#'
-							size='lg'
-						>
-							{item}
-						</Link>
-					</NavbarMenuItem>
-				))}
+				<NavbarMenuItem>
+					<Link
+						className='w-full'
+						href='/'
+						size='lg'
+					>
+						Home
+					</Link>
+				</NavbarMenuItem>
+				<NavbarMenuItem>
+					<Link
+						className='w-full'
+						href='/docs'
+						size='lg'
+					>
+						Docs
+					</Link>
+				</NavbarMenuItem>
+				<NavbarMenuItem>
+					<Link
+						className='w-full'
+						href='/discord'
+						size='lg'
+					>
+						Discord
+					</Link>
+				</NavbarMenuItem>
+				<NavbarMenuItem>
+					<Link
+						className='w-full'
+						href='/modules'
+						size='lg'
+					>
+						Modules
+					</Link>
+				</NavbarMenuItem>
 			</NavbarMenu>
 		</NextUINavbar>
 	)

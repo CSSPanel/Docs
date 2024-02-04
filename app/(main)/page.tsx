@@ -2,7 +2,7 @@
 
 import Link from 'next/link'
 import Particle from '../UI/Particle'
-import Buttons from './UI/Button'
+import Buttons from './UI/Buttons'
 import { motion } from 'framer-motion'
 import { fadeUpSlide } from '@/config/animations'
 
