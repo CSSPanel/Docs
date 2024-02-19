@@ -4,8 +4,8 @@ import Link from 'next/link'
 const Configuration = () => {
 	return (
 		<>
-			<h2 className='text-3xl'>Configurating the panel</h2>
-			<p className='text-lg mb-10'>
+			<h2 className='text-2xl'>Configurating the panel</h2>
+			<p className='text-base mb-10'>
 				1. Login to the panel and head over to the Admin Panel {'->'} Panel Settings, and edit the settings
 				accordingly
 				<br />
@@ -16,15 +16,15 @@ const Configuration = () => {
 				4. Head over to '/admin/settings' and change the SEO settings to your needs.
 				<br />
 			</p>
-			<h2 className='text-3xl'>Customize the panel</h2>
-			<p className='text-lg mb-10'>
+			<h2 className='text-2xl'>Customize the panel</h2>
+			<p className='text-base mb-10'>
 				1. Head over to the Admin Panel {'->'} Panel Settings {'->'} Design and change the design to your needs.
 				<br />
 				2. Head over Header Design and change the header to your needs, note that you can change the HTML and
 				the CSS with a dedicated editor and preview the changes live.
 				<br />
 			</p>
-			<h2 className='text-3xl'>Next Steps</h2>
+			<h2 className='text-2xl'>Next Steps</h2>
 			<Link href='/docs/updating'>Updating the panel</Link>
 		</>
 	)

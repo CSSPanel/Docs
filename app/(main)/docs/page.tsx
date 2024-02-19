@@ -32,6 +32,11 @@ export const PAGES: Page[] = [
 		description: 'Connect your panel to your servers RCON and execute commands.',
 		item: <RCON />,
 	},
+	{
+		title: 'FAQ',
+		description: 'Frequently asked questions and their answers.',
+		item: <RCON />,
+	},
 ]
 
 const DocsPage = () => {

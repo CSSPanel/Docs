@@ -5,8 +5,8 @@ import Link from 'next/link'
 const Discord = () => {
 	return (
 		<>
-			<h2 className='text-3xl'>Connect your Discord server</h2>
-			<p className='text-lg mb-10'>
+			<h2 className='text-2xl'>Connect your Discord server</h2>
+			<p className='text-base mb-10'>
 				You can connect your panel to your discord server and get notified for every action that happens on your
 				panel.
 				<br />
@@ -24,7 +24,7 @@ const Discord = () => {
 				<br />
 				6. Now you will get notified for every action that happens on your panel.
 			</p>
-			<h2 className='text-3xl'>Next Steps</h2>
+			<h2 className='text-2xl'>Next Steps</h2>
 			<Link href='/docs/rcon'>Set up RCON</Link>
 		</>
 	)

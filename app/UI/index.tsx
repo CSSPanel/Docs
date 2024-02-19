@@ -3,9 +3,9 @@ import Navbar from './Navbar'
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
 	return (
-		<div className='flex flex-col'>
+		<div className='flex flex-col justify-between min-h-screen'>
 			<Navbar />
-			<div className='min-h-[44vw] py-44 container mx-auto'>{children}</div>
+			<div className='py-44 container mx-auto'>{children}</div>
 			<Footer />
 		</div>
 	)
