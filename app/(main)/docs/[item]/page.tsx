@@ -1,9 +1,8 @@
-import { useParams } from 'next/navigation'
 import { PAGES } from '../page'
 
 const DocsPage = ({ params }: { params: { item: string } }) => {
 	const { item } = params
-	const page = PAGES.find((p) => p.title.toLowerCase() === item.toLowerCase())
+	const page = PAGES.find((p) => p.title.toLowerCase().replace(' ', '-') === item.toLowerCase().replace(' ', '-'))
 	if (!page) return <h1>Page not found</h1>
 
 	return (

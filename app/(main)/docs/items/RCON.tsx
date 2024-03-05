@@ -7,8 +7,8 @@ const RCON = () => {
 		<>
 			<h2 className='text-2xl'>Why do you need RCON?</h2>
 			<p className='text-base mb-10'>
-				Some of the panel actions like kicking, banning or muting a player, and executing commands require RCON
-				to be enabled on your server and set up on the panel.
+				Some of the panel actions like advanced servers & players query, kicking, banning or muting a player,
+				and executing commands require RCON to be enabled on your servers.
 				<br />
 			</p>
 			<h2 className='text-2xl'>Enabling RCON on the servers</h2>
@@ -20,12 +20,11 @@ const RCON = () => {
 				<br />
 				2. Restart your server.
 			</p>
-			<h2 className='text-2xl'>Setup the panel RCON</h2>
-			<p className='text-base mb-10'>
-				Head over to the Admin Panel {'->'} Panel Settings {'->'} Servers and set the RCON Password there.
-				<br />
-				The panel will then try to connect to your servers RCON and check if the password is correct.
-			</p>
+			<b>Important note:</b>
+			The plugin will automatically update the servers rcon password on every server start,
+			<br />
+			editing the server rcon password manually through the panel will cause the plugin to overwrite the password
+			on the next server start.
 		</>
 	)
 }
