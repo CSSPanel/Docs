@@ -24,7 +24,7 @@ const Buttons = () => {
 				<Button
 					variant='bordered'
 					color='gradient'
-					className='from-blue-500 to-sky-500 shadow-sky-500/20 w-full sm:w-fit justify-center'
+					className='from-blue-500 to-sky-500 shadow-sky-500/20 w-full lg:w-fit justify-center'
 					gradientClassName='w-full sm:w-fit justify-center'
 				>
 					Download
@@ -33,12 +33,12 @@ const Buttons = () => {
 
 			<Link
 				href='/docs'
-				className='w-full sm:w-fit text-center items-center no-underline'
+				className='w-full lg:w-fit text-center items-center no-underline'
 			>
 				<Button
 					variant='bordered'
-					className='!font-normal justify-center'
-					gradientClassName='w-full sm:w-fit justify-center'
+					className='!font-normal justify-center w-full sm:w-fit '
+					gradientClassName='justify-center'
 				>
 					Docs <IconArrowRight className='ml-6' />
 				</Button>

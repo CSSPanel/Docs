@@ -19,7 +19,7 @@ const Home = () => {
 			/>
 
 			<motion.h1
-				className='text-8xl font-black'
+				className='text-4xl lg:text-4xl xl:text-8xl font-black'
 				viewport={{ once: true }}
 				variants={fadeUpSlide}
 				whileInView='in'
@@ -29,7 +29,7 @@ const Home = () => {
 				CSSharp Panel - Admin Web Panel
 			</motion.h1>
 			<motion.p
-				className='text-2xl w-2/3 mx-auto'
+				className='text-xl xl:text-2xl lg:w-2/3 mx-auto'
 				viewport={{ once: true }}
 				variants={fadeUpSlide}
 				whileInView='in'

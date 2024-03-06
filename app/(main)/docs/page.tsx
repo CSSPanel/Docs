@@ -5,6 +5,7 @@ import Quickstart from './items/Quickstart'
 import Discord from './items/Discord'
 import Update from './items/Update'
 import RCON from './items/RCON'
+import FAQ from './items/FAQ'
 import Link from 'next/link'
 
 export const PAGES: Page[] = [
@@ -46,15 +47,15 @@ export const PAGES: Page[] = [
 	{
 		title: 'FAQ',
 		description: 'Frequently asked questions and their answers.',
-		item: <RCON />,
+		item: <FAQ />,
 	},
 ]
 
 const DocsPage = () => {
 	return (
 		<>
-			<h1 className='text-6xl font-semibold'>Documentation</h1>
-			<div className='grid grid-cols-3 gap-10'>
+			<h1 className='text-3xl xl:text-6xl font-semibold'>Documentation</h1>
+			<div className='grid grid-cols-1 xl:grid-cols-3 gap-10'>
 				{PAGES.map((page) => (
 					<Card
 						className='w-full min-h-48 no-underline'
@@ -63,7 +64,7 @@ const DocsPage = () => {
 						as={Link}
 						isPressable
 					>
-						<CardBody className='flex flex-col text-center justify-center items-center gap-2 px-10 py-12'>
+						<CardBody className='flex flex-col text-center justify-center items-center gap-2 px-10 xl:py-12'>
 							<h2 className='text-xl font-medium text-blue-500'>{page.title}</h2>
 							<p>{page.description}</p>
 						</CardBody>

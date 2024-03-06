@@ -8,10 +8,10 @@ const DocsPage = ({ params }: { params: { item: string } }) => {
 	return (
 		<>
 			<div className='flex flex-col gap-6 items-center'>
-				<h1 className='text-6xl font-semibold'>{page.title}</h1>
-				<h2 className='text-lg underline'>{page.description}</h2>
+				<h1 className='text-3xl xl:text-6xl font-semibold'>{page.title}</h1>
+				<h2 className='xl: text-lg underline'>{page.description}</h2>
 			</div>
-			<div className='flex flex-col items-start gap-2'>{page.item}</div>
+			<div className='flex flex-col items-start gap-2 px-4'>{page.item}</div>
 		</>
 	)
 }
