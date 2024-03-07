@@ -17,7 +17,7 @@ const Buttons = () => {
 			custom={2}
 		>
 			<Link
-				href='https://github.com/ShiNxz/CSS-Panel/releases'
+				href='https://github.com/CSSPanel/Panel/releases'
 				target='_blank'
 				className='w-full sm:w-fit text-center items-center no-underline'
 			>

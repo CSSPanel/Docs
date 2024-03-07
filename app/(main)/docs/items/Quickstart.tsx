@@ -1,4 +1,5 @@
 'use client'
+
 /* eslint-disable react/no-unescaped-entities */
 import { Accordion, AccordionItem } from '@nextui-org/accordion'
 import { Snippet } from '@nextui-org/snippet'
