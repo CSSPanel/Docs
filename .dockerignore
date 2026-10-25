@@ -1,0 +1,17 @@
+# Build context of the Dockerfile. The image installs its own dependencies and
+# builds its own output, so nothing from a laptop may leak in.
+node_modules
+.next
+*.tsbuildinfo
+next-env.d.ts
+
+# The committed .env only holds the public NEXT_PUBLIC_* defaults and stays in.
+# Local overrides and secrets do not.
+.env.local
+.env.*.local
+
+.git
+.claude
+.vscode
+.todo
+**/.DS_Store
